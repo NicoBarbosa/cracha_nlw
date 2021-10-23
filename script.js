@@ -1,12 +1,9 @@
 const linksSocialMedia = {
   github: 'NicoBarbosa',
-  youtube: 'channel/UCCfeZQwzY8s5PCcC1L5ST2g', 
-  facebook: 'nicolas.penante.1',
+  linkedin: 'in/nicolas-penante', 
   instagram: 'nicolasspenante',
   twitter: 'nicolasspenante'
 }
-
-
 
 function changeSocialMediaLinks() {
   

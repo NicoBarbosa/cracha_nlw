@@ -13,14 +13,13 @@ html, body {
 body {
   display: grid;
   place-items: center;
-
 }
 
 main {
-  background: url(images/background.png);
-  width: 375px;
-  height: 812px;
-  color: var(--gray);
+  background: url(images/Mobile.svg) no-repeat center/cover; 
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -28,6 +27,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  color: var(--gray);
 }
 
 .avatar {
@@ -75,4 +75,169 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+li img {
+  height: 48px;
+}
+
+li img {
+  position: relative;
+  animation-name: redes;
+  animation-duration: 1s;
+}
+
+@keyframes redes{
+  0%   {top:400px;}
+  100% {top:0px;}
+}
+
+a :hover {
+  transition: 0.1s;
+  color: #FFCD1E;
+}
+
+li img:hover {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right,#FF008E, #FFCD1E);
+  transition: 0.1s;
+}
+
+/* 960px */
+@media (min-width: 960px) {
+
+  main {
+    background: url(desktop/desktop.svg) center/cover;
+    background-color: #09090A;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    margin: 14rem auto 0;
+  }
+  
+  .avatar > img {
+    width: 8rem;
+    height: 9.5rem;
+  }
+
+  p {
+    margin-top: 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  ul {
+    margin-top: 1.6rem;
+  }
+
+  a :hover {
+    font-size: 1rem;
+  }
+
+  li img:hover {
+    height: 3.1rem;
+  }
+  
+}
+
+/* 1390px */
+@media (min-width: 1390px) {
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    max-width: 250px;
+    margin: 13.7rem auto 0;
+  }
+
+  .avatar {
+    width: 9rem;
+  }
+
+  .avatar > span > img {
+    width: 5.1rem;
+  }
+
+  .avatar > img {
+    width: 9rem;
+    height: 10.5rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+
+  ul {
+    margin-top: 1.4rem;
+    
+  }
+  
+}
+
+/* 1600px */
+@media (min-width: 1600px) {
+
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .container {
+    max-width: 330px;
+    margin: 14.6rem auto 0;
+  }
+
+  .avatar {
+    width: 12rem;
+  }
+
+  .avatar > span > img {
+    width: 6.5rem;
+  }
+
+  .avatar > img {
+    width: 12rem;
+    height: 13.5rem;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+
+  p {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  ul {
+    margin-top: 3rem;
+    
+  }
+  
+  li img {
+    height: 4rem;
+  }
+
+  a :hover {
+    font-size: 1.1rem;
+  }
+
+  li img:hover {
+    height: 4.1rem;
+  }
 }
